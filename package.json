@@ -1,5 +1,5 @@
 {
-  "name": "react-plaid-link",
+  "name": "@deconet/react-plaid-link",
   "version": "1.2.0",
   "description": "A React component for Plaid Link",
   "files": [
