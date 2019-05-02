@@ -162,7 +162,7 @@ class PlaidLink extends Component {
 
   render() {
     return (
-      <div>
+      <span>
         <button
           onClick={this.handleOnClick}
           disabled={this.state.disabledButton}
@@ -174,7 +174,7 @@ class PlaidLink extends Component {
           url={this.state.initializeURL}
           onError={this.onScriptError}
           onLoad={this.onScriptLoaded} />
-      </div>
+      </span>
     );
   }
 }
