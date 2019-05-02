@@ -17,6 +17,7 @@
     "react-component",
     "plaid"
   ],
+  "private": false,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pbernasconi/react-plaid-link/issues"
