@@ -25,6 +25,7 @@ class PlaidLink extends Component {
     institution: null,
     selectAccount: false,
     token: null,
+    disabled: false,
     style: {
       padding: '6px 4px',
       outline: 'none',
@@ -111,6 +112,9 @@ class PlaidLink extends Component {
 
     // Button Class names as a String
     className: PropTypes.string,
+
+    // Disable the button
+    disabled: PropTypes.bool,
   }
 
   onScriptError() {
@@ -166,7 +170,7 @@ class PlaidLink extends Component {
       <span>
         <ButtonElement
           onClick={this.handleOnClick}
-          disabled={this.state.disabledButton}
+          disabled={this.state.disabledButton || this.props.disabled}
           style={this.props.style}
           className={this.props.className}>
           {this.props.children}
